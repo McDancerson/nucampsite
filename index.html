@@ -6,14 +6,14 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- Bootstrap CSS -->
+    <!-- build:css css/main.css -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
-
-    <!-- Additional CSS must be placed after Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
     <link rel="stylesheet" href="css/styles.css" />
+    <!-- endbuild -->
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
 
     <title>NuCamp: A Better Way To Camp</title>
 </head>
@@ -31,7 +31,8 @@
                     <h2>a better way to camp</h2>
                 </div>
                 <div class="col-md-4 col-xl-2 mt-4">
-                    <a role="button" data-toggle="modal" data-target="#reserveModal" class="btn btn-info btn-lg text-nowrap">Reserve Campsite</a>
+                    <a role="button" data-toggle="modal" data-target="#reserveModal"
+                        class="btn btn-info btn-lg text-nowrap">Reserve Campsite</a>
                 </div>
             </div>
         </div>
@@ -47,53 +48,53 @@
                 <div class="modal-body">
                     <div class="container-fluid">
                         <form>
-                                   <!-- Row 1: Number of Campers-->
-                                   <div class="form-group row">
-                                    <label for="numCampers" class="col-sm-6 col-form-label">Number of Campers</label>
-                                    <div class="col">
-                                        <select name="numCampers" id="numCampers" class="form-control">
-                                            <option selected>Select...</option>
-                                            <option value="1">1</option>
-                                            <option value="2">2</option>
-                                            <option value="3">3</option>
-                                            <option value="4">4</option>
-                                            <option value="5">5</option>
-                                            <option value="6">6</option>
-                                        </select>
-                                    </div>
+                            <!-- Row 1: Number of Campers-->
+                            <div class="form-group row">
+                                <label for="numCampers" class="col-sm-6 col-form-label">Number of Campers</label>
+                                <div class="col">
+                                    <select name="numCampers" id="numCampers" class="form-control">
+                                        <option selected>Select...</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                    </select>
                                 </div>
-    
-                                <!-- Row 2: Date-->
-                                <div class="form-group row">
-                                    <label for="date" class="col-sm-6 col-form-label">Date</label>
-                                    <div class="col-sm-6">
-                                        <input type="date" id="date" name="date" placeholder="mm/dd/yyyy"
-                                            class="form-control">
-                                        </input>
-                                    </div>
-                                </div>
+                            </div>
 
-                                <!-- Row 2: Campsite Type -->
-                                <div class="form-group row">
-                                    <label for="siteType" class="col-sm-6 col-form-label">Campsite Type</label>
-                                    <div class="col-2 btn-group btn-group-toggle" data-toggle="buttons">
-                                        <label class="btn btn-success active">
-                                            <input type="radio" value="tent" name="siteType" id="siteTent" checked> Tent
-                                          </label>
-                                          
-                                          <label class="btn btn-primary">
-                                            <input type="radio" value="RV" name="siteType" id="siteRV"> RV
-                                          </label>
-                                    </div>
+                            <!-- Row 2: Date-->
+                            <div class="form-group row">
+                                <label for="date" class="col-sm-6 col-form-label">Date</label>
+                                <div class="col-sm-6">
+                                    <input type="date" id="date" name="date" placeholder="mm/dd/yyyy"
+                                        class="form-control">
+                                    </input>
                                 </div>
-    
-                                <!-- Row 3: Search Bar -->
-                                <div class="form-group row">
-                                    <div class="col">
-                                        <button type="submit" data-dismiss="modal" class="btn btn-secondary">Cancel</button>
-                                        <button type="submit" class="btn btn-primary">Search</button>
-                                    </div>
+                            </div>
+
+                            <!-- Row 2: Campsite Type -->
+                            <div class="form-group row">
+                                <label for="siteType" class="col-sm-6 col-form-label">Campsite Type</label>
+                                <div class="col-2 btn-group btn-group-toggle" data-toggle="buttons">
+                                    <label class="btn btn-success active">
+                                        <input type="radio" value="tent" name="siteType" id="siteTent" checked> Tent
+                                    </label>
+
+                                    <label class="btn btn-primary">
+                                        <input type="radio" value="RV" name="siteType" id="siteRV"> RV
+                                    </label>
                                 </div>
+                            </div>
+
+                            <!-- Row 3: Search Bar -->
+                            <div class="form-group row">
+                                <div class="col">
+                                    <button type="submit" data-dismiss="modal" class="btn btn-secondary">Cancel</button>
+                                    <button type="submit" class="btn btn-primary">Search</button>
+                                </div>
+                            </div>
                         </form>
                     </div>
                 </div>
@@ -211,12 +212,12 @@
                         <span class="carousel-control-next-icon"></span>
                         <span class="sr-only">Next</span>
                     </a>
-                    
-                        <button class="btn btn-danger btn-small" id="carouselButton">
-                            <i class="fa fa-pause"></i>
-                        </button>
-                       
-                    
+
+                    <button class="btn btn-danger btn-small" id="carouselButton">
+                        <i class="fa fa-pause"></i>
+                    </button>
+
+
                 </div>
             </div>
         </div>
@@ -272,7 +273,7 @@
                 </div>
             </div>
         </div>
-        
+
     </div>
 
     <footer class="site-footer">
@@ -287,7 +288,7 @@
                         <li><a href="contactus.html">Contact</a></li>
                         <!-- <li><a href="indexCopy.html">Index copy</a></li> -->
                     </ul>
-                
+
                 </div>
                 <div class="col-6 col-sm-5 text-center">
                     <h5>Social</h5>
@@ -300,24 +301,24 @@
                     <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i
                             class="fa fa-youtube"></i></a>
 
-                <div class="col-sm-4 text-center">
-                    <a role="button" class="btn btn-link" href="tel:+12065551234"><i class="fa fa-phone"></i>
-                        1-206-555-1234</a><br>
-                    <a role="button" class="btn btn-link" href="mailto:campsites@nucamp.co"><i
-                            class="fa fa-envelope-o"></i> campsites@nucamp.co</a>
+                    <div class="col-sm-4 text-center">
+                        <a role="button" class="btn btn-link" href="tel:+12065551234"><i class="fa fa-phone"></i>
+                            1-206-555-1234</a><br>
+                        <a role="button" class="btn btn-link" href="mailto:campsites@nucamp.co"><i
+                                class="fa fa-envelope-o"></i> campsites@nucamp.co</a>
+                    </div>
                 </div>
             </div>
-        </div>
     </footer>
 
     <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+    
+    <!-- build:js js/main.js -->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-
-    <script src="js/scripts.js">
-       
-    </script>
+    <script src="js/scripts.js"></script>
+       <!-- endbuild -->
 
 </body>
 
